@@ -126,9 +126,9 @@ static const int GRID_COLUMNS = 10;
         {
             Creature *currentCreature = _gridArray[i][j];
             if (currentCreature.livingNeighbors == 3)
-                currentCreature.isAlive = YES;
+                currentCreature.isAlive = TRUE;
             else if (currentCreature.livingNeighbors < 2 || currentCreature.livingNeighbors > 3)
-                currentCreature.isAlive = NO;
+                currentCreature.isAlive = FALSE;
         }
     }
 }
